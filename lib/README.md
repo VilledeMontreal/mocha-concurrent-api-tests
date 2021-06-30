@@ -6,7 +6,7 @@ Mocha-concurrent-api-tests provides the core functions required to implement [Co
 
 In your project, run this npm command:
 
-`npm install mocha-concurrent-api-tests --save-dev`
+`npm install @villedemontreal/mocha-concurrent-api-tests`
 
 ## Functions
 
@@ -51,7 +51,7 @@ See [mocha-concurrent-api-tests example](https://github.com/VilledeMontreal/moch
 
 ---
 
-### defineCopyTemplateVariation(originalCopyTemplate, variation) 
+### defineCopyTemplateVariation(originalCopyTemplate, variation)
 
 Define a copy template variation to avoid duplication when the same template is used in many test cases.
 

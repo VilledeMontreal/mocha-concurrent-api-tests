@@ -1,6 +1,6 @@
 {
   "name": "@villedemontreal/mocha-concurrent-api-tests",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Provides the core functions required to implement concurrent API tests with Mocha.",
   "main": "src/index.js",
   "directories": {
@@ -32,8 +32,6 @@
   "author": "Stéphane Leblanc",
   "license": "MIT",
   "devDependencies": {
-    "@types/chai": "4.2.14",
-    "@types/lodash": "4.14.170",
     "@types/mocha": "8.2.0",
     "@villedemontreal/lint-config": "1.7.5",
     "mocha": "8.3.2",
@@ -42,6 +40,8 @@
     "typescript": "4.1.3"
   },
   "dependencies": {
+    "@types/chai": "4.2.19",
+    "@types/lodash": "4.14.170",
     "chai": "4.3.4",
     "lodash": "4.17.21",
     "mocha.parallel": "0.15.6",
