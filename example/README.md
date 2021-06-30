@@ -13,7 +13,7 @@ Under /example, run these npm commands:
 
 ## Features
 
-- Usage examples of [mocha-concurrent-api-tests functions](../lib/README.md#functions)
+- Usage examples of [mocha-concurrent-api-tests functions](https://github.com/VilledeMontreal/mocha-concurrent-api-tests/blob/master/lib/README.md#functions)
 - File extension convention
 - Ability to test against the current and the latest stable version version of the system under test.
   - `npm run test-current`

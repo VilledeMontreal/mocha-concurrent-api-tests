@@ -20,8 +20,8 @@ Execute a mocha concurrent api test suite. Mocha [describe function](https://moc
 - estimatedTestingTime: The estimated time required to execute the test suite (Ex: "45 seconds").
 - environment: The environment against wish the test suite is executeed (Ex: "dev").
 - maxTestConcurrency: The maximum number of tests that can be executed concurrently (Ex: 30).
-- apiTests: A function that invoke many [it function](https://mochajs.org/#getting-started). Mocha [describe function](https://mochajs.org/#getting-started) can be emulated by grouping [it functions](https://mochajs.org/#getting-started) into standard functions. See [mocha-concurrent-api-tests example](../example/src/allTests.apiTestSuite.ts#L11-L14).
-- skippedTests: [optionnal] A function that invoke many skipped [it function](https://mochajs.org/#getting-started). Allows to skip a group of [it functions](https://mochajs.org/#getting-started). See [mocha-concurrent-api-tests example](../example/src/allTests.apiTestSuite.ts#L15-L18).
+- apiTests: A function that invoke many [it function](https://mochajs.org/#getting-started). Mocha [describe function](https://mochajs.org/#getting-started) can be emulated by grouping [it functions](https://mochajs.org/#getting-started) into standard functions. See [mocha-concurrent-api-tests example](https://github.com/VilledeMontreal/mocha-concurrent-api-tests/blob/master/example/src/allTests.apiTestSuite.ts#L11-L14).
+- skippedTests: [optionnal] A function that invoke many skipped [it function](https://mochajs.org/#getting-started). Allows to skip a group of [it functions](https://mochajs.org/#getting-started). See [mocha-concurrent-api-tests example](https://github.com/VilledeMontreal/mocha-concurrent-api-tests/blob/master/example/src/allTests.apiTestSuite.ts#L15-L18).
 
 **Returns**
 
@@ -29,7 +29,7 @@ void
 
 **Example**
 
-See [mocha-concurrent-api-tests example](../example/src/allTests.apiTestSuite.ts#L6-L19).
+See [mocha-concurrent-api-tests example](https://github.com/VilledeMontreal/mocha-concurrent-api-tests/blob/master/example/src/allTests.apiTestSuite.ts#L6-L19).
 
 ---
 
@@ -47,7 +47,7 @@ A function that provide a default payload template and allow to specify only the
 
 **Example**
 
-See [mocha-concurrent-api-tests example](../example/src/blogPosts/blogPost.template.ts#L4-L17).
+See [mocha-concurrent-api-tests example](https://github.com/VilledeMontreal/mocha-concurrent-api-tests/blob/master/example/src/blogPosts/blogPost.template.ts#L4-L17).
 
 ---
 
@@ -66,7 +66,7 @@ A function that provide a default payload template and allow to specify only the
 
 **Example**
 
-See [mocha-concurrent-api-tests example](../example/src/blogPosts/blogPost.template.ts#L19-L23).
+See [mocha-concurrent-api-tests example](https://github.com/VilledeMontreal/mocha-concurrent-api-tests/blob/master/example/src/blogPosts/blogPost.template.ts#L19-L23).
 
 ---
 
@@ -84,7 +84,7 @@ void
 
 **Example**
 
-See [mocha-concurrent-api-tests example](../example/src/blogPosts/blogPost.apiTest.ts#L29-L36).
+See [mocha-concurrent-api-tests example](https://github.com/VilledeMontreal/mocha-concurrent-api-tests/blob/master/example/src/blogPosts/blogPost.apiTest.ts#L29-L36).
 
 ---
 
@@ -135,7 +135,7 @@ A function that perform lazy initialization of the shared fixture.
 
 **Example**
 
-See [mocha-concurrent-api-tests example](../example/src/users/user.fixture.ts#L14).
+See [mocha-concurrent-api-tests example](https://github.com/VilledeMontreal/mocha-concurrent-api-tests/blob/master/example/src/users/user.fixture.ts#L14).
 
 ---
 
@@ -153,7 +153,7 @@ A function that perform lazy initialization of the shared fixture for a specific
 
 **Example**
 
-See [mocha-concurrent-api-tests example](../example/src/users/user.fixture.ts#L16).
+See [mocha-concurrent-api-tests example](https://github.com/VilledeMontreal/mocha-concurrent-api-tests/blob/master/example/src/users/user.fixture.ts#L16).
 
 ## Testing mocha-concurrent-api-tests itself
 
