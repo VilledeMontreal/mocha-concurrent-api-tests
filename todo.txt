@@ -1,11 +1,14 @@
 *** lors de la publication
-
-- review immutable data must be meaningless
-- blog post: link sample with blog post
-- link github with blog post
 - publish npm: use the city namespace in npm 
 - use package from npm in example
 - create develop
+
+- review link on npm page and 
+- review npm description
+- review immutable data must be meaningless
+- blog post: link sample with blog post
+- link github with blog post
+- review npm keywords
 ***
 
 *** promote

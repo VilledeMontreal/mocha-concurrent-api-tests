@@ -1,7 +1,7 @@
 {
   "name": "@villedemontreal/mocha-concurrent-api-tests",
   "version": "1.0.0",
-  "description": "Mocha-concurrent-api-tests provides the core functions required to implement concurrent API tests with Mocha. For more details, see https://medium.com/@stphaneleblanc/d84f7a29f0dc?source=friends_link&sk=843339381eaf77195f8522449c907550",
+  "description": "Provides the core functions required to implement concurrent API tests with Mocha.",
   "main": "src/index.js",
   "directories": {
     "lib": "./src"
