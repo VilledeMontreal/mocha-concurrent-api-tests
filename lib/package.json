@@ -1,5 +1,5 @@
 {
-  "name": "mocha-concurrent-api-tests",
+  "name": "@villedemontreal/mocha-concurrent-api-tests",
   "version": "1.0.0",
   "description": "Mocha-concurrent-api-tests provides the core functions required to implement concurrent API tests with Mocha. For more details, see https://medium.com/@stphaneleblanc/d84f7a29f0dc?source=friends_link&sk=843339381eaf77195f8522449c907550",
   "main": "src/index.js",
@@ -9,16 +9,16 @@
   "scripts": {
     "start": "tsc && mocha \"src/**/*.test.js\" --require source-map-support/register --require mocha-error-reporters --reporter=minWithFullErrors --no-timeouts --exit",
     "watch": "tsc --watch --pretty",
-    "lint": "node_modules/.bin/villemontreal-lint . check node both",
-    "lint-fix": "node_modules/.bin/villemontreal-lint . fix node both",
-    "prettier": "node_modules/.bin/villemontreal-lint . check node prettier",
-    "prettier-fix": "node_modules/.bin/villemontreal-lint . fix node prettier",
-    "tslint": "node_modules/.bin/villemontreal-lint . check node tslint",
-    "tslint-fix": "node_modules/.bin/villemontreal-lint . fix node tslint"
+    "lint": "villemontreal-lint . check node both",
+    "lint-fix": "villemontreal-lint . fix node both",
+    "prettier": "villemontreal-lint . check node prettier",
+    "prettier-fix": "villemontreal-lint . fix node prettier",
+    "tslint": "villemontreal-lint . check node tslint",
+    "tslint-fix": "villemontreal-lint . fix node tslint"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/VilledeMontreal/mocha-concurrent-api-tests"
+    "url": "git+https://github.com/VilledeMontreal/mocha-concurrent-api-tests.git"
   },
   "homepage": "https://github.com/VilledeMontreal/mocha-concurrent-api-tests",
   "keywords": [
@@ -46,5 +46,8 @@
     "lodash": "4.17.21",
     "mocha.parallel": "0.15.6",
     "uuid": "8.3.2"
+  },
+  "bugs": {
+    "url": "https://github.com/VilledeMontreal/mocha-concurrent-api-tests/issues"
   }
 }
