@@ -10,7 +10,9 @@ In your project, run this npm command:
 
 ## Functions
 
-### apiTestSuite(testSuiteName, estimatedTestingTime, environment, maxTestConcurrency, apiTests, skippedTests?)
+---
+
+### apiTestSuite(testSuiteName, estimatedTestingTime, environment, maxTestConcurrency, apiTests, skippedTests)
 
 Execute a mocha concurrent api test suite. Mocha [describe function](https://mochajs.org/#getting-started) and nested describe functions are not supported by mocha-concurrent-api-tests. Instead, a mocha concurrent api test suite executes many Mocha [it function](https://mochajs.org/#getting-started) concurrently in the same thread.
 
@@ -21,7 +23,7 @@ Execute a mocha concurrent api test suite. Mocha [describe function](https://moc
 - environment: The environment against wish the test suite is executeed (Ex: "dev").
 - maxTestConcurrency: The maximum number of tests that can be executed concurrently (Ex: 30).
 - apiTests: A function that invoke many [it function](https://mochajs.org/#getting-started). Mocha [describe function](https://mochajs.org/#getting-started) can be emulated by grouping [it functions](https://mochajs.org/#getting-started) into standard functions. See [mocha-concurrent-api-tests example](../example/src/allTests.apiTestSuite.ts#L11-L14).
-- skippedTests?: [optionnal] A function that invoke many skipped [it function](https://mochajs.org/#getting-started). Allows to skip a group of [it functions](https://mochajs.org/#getting-started). See [mocha-concurrent-api-tests example](../example/src/allTests.apiTestSuite.ts#L15-L18).
+- skippedTests: [optionnal] A function that invoke many skipped [it function](https://mochajs.org/#getting-started). Allows to skip a group of [it functions](https://mochajs.org/#getting-started). See [mocha-concurrent-api-tests example](../example/src/allTests.apiTestSuite.ts#L15-L18).
 
 **Returns**
 
@@ -31,7 +33,9 @@ void
 
 See [mocha-concurrent-api-tests example](../example/src/allTests.apiTestSuite.ts#L6-L19).
 
-### defineCopyTemplate<T>(template: T): CopyTemplate<T>
+---
+
+### defineCopyTemplate(template)
 
 Define a function that provide a default payload template and that allow to specify only the parts of the payload that are meaningful for the test case. This way, test cases are easier to read since only the parts that matter are specified. Moreover, if a change in a payload is required, only the default payload template and the related tests need to be changed.
 
@@ -47,7 +51,9 @@ A function that provide a default payload template and allow to specify only the
 
 See [mocha-concurrent-api-tests example](../example/src/blogPosts/blogPost.template.ts#L4-L17).
 
-### defineCopyTemplateVariation<T>(
+---
+
+### defineCopyTemplateVariation(originalCopyTemplate, variation) 
 
 Define a copy template variation to avoid duplication when the same template is used in many test cases.
 
@@ -64,6 +70,8 @@ A function that provide a default payload template and allow to specify only the
 
 See [mocha-concurrent-api-tests example](../example/src/blogPosts/blogPost.template.ts#L19-L23).
 
+---
+
 ### shouldThrow(act, customAssert)
 
 Assert against an API request that is expected to throw an error.
@@ -79,6 +87,8 @@ void
 **Example**
 
 See [mocha-concurrent-api-tests example](../example/src/blogPosts/blogPost.apiTest.ts#L29-L36).
+
+---
 
 ### aFewSeconds(delayInSeconds)
 
@@ -97,6 +107,8 @@ void
 **Example**
 
 `await aFewSeconds(5);`
+
+---
 
 ### defineGetSharedFixture(createSharedFixture)
 
@@ -127,6 +139,8 @@ A function that perform lazy initialization of the shared fixture.
 
 See [mocha-concurrent-api-tests example](../example/src/users/user.fixture.ts#L14).
 
+---
+
 ### defineGetSharedFixtureByKey(createSharedFixture)
 
 Same as defineGetSharedFixture, but allow to pass a key as argument. Useful when there are many similar shared fixture to be defined.
@@ -142,6 +156,8 @@ A function that perform lazy initialization of the shared fixture for a specific
 **Example**
 
 See [mocha-concurrent-api-tests example](../example/src/users/user.fixture.ts#L16).
+
+---
 
 ## Testing mocha-concurrent-api-tests itself
 
