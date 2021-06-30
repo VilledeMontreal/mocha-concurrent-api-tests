@@ -4,7 +4,7 @@
 // HTTP requests to real HTTP servers.
 // ----------------------------------------------------------------------
 
-import { aFewSeconds } from '../../../../lib/src';
+import { aFewSeconds } from '@villedemontreal/mocha-concurrent-api-tests';
 import { ApiError, BlogPost, HttpResponse, User } from './apiClient';
 
 export async function fakeGetBlogPosts(authorId: string): Promise<HttpResponse<BlogPost[]>> {

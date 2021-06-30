@@ -1,5 +1,6 @@
+import { shouldThrow } from '@villedemontreal/mocha-concurrent-api-tests';
 import { assert } from 'chai';
-import { shouldThrow } from '../../../lib/src';
+
 import { postUser } from '../users/user.fixture';
 import { copyUserTemplate } from '../users/user.template';
 import { getBlogPosts, postBlogPost, postBlogPostWithDefaultAuthor } from './blogPost.fixture';

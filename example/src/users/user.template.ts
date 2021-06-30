@@ -1,4 +1,4 @@
-import { defineCopyTemplate } from '../../../lib/src';
+import { defineCopyTemplate } from '@villedemontreal/mocha-concurrent-api-tests';
 import { User } from '../shared/apiUnderTest/apiClient';
 
 export const copyUserTemplate = defineCopyTemplate<User>({

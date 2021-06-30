@@ -1,4 +1,4 @@
-import { defineGetSharedFixture, defineGetSharedFixtureByKey } from '../../../lib/src';
+import { defineGetSharedFixture, defineGetSharedFixtureByKey } from '@villedemontreal/mocha-concurrent-api-tests';
 import { HttpResponse, postUserApiClient, User } from '../shared/apiUnderTest/apiClient';
 import { apiUnderTestConfig } from '../shared/apiUnderTest/apiUnderTestConfig';
 import { copyUserTemplate } from './user.template';

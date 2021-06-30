@@ -1,7 +1,7 @@
-import { apiTestSuite } from '../../lib/src';
 import { blogPostApiTests } from './blogPosts/blogPost.apiTest';
 import { apiUnderTestConfig } from './shared/apiUnderTest/apiUnderTestConfig';
 import { userApiTests } from './users/user.apiTest';
+import { apiTestSuite } from '@villedemontreal/mocha-concurrent-api-tests';
 
 apiTestSuite(
   'sample test suite',

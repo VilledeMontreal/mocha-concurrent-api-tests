@@ -1,4 +1,4 @@
-import { defineCopyTemplate, defineCopyTemplateVariation } from '../../../lib/src';
+import { defineCopyTemplate, defineCopyTemplateVariation } from '@villedemontreal/mocha-concurrent-api-tests';
 import { BlogPost } from '../shared/apiUnderTest/apiClient';
 
 export const copyBlogPostTemplate = defineCopyTemplate<BlogPost>({
