@@ -139,13 +139,13 @@ See [mocha-concurrent-api-tests example](../example/src/users/user.fixture.ts#L1
 
 ---
 
-### defineGetSharedFixtureByKey(createSharedFixture)
+### defineGetSharedFixtureByKey(createSharedFixtureByKey)
 
 Same as defineGetSharedFixture, but allow to pass a key as argument. Useful when there are many similar shared fixture to be defined.
 
 **Arguments**
 
-- createSharedFixture: A function that initialize the shared fixture for a specific key.
+- createSharedFixtureByKey: A function that initialize the shared fixture for a specific key.
 
 **Returns**
 

@@ -110,7 +110,7 @@ export function defineGetSharedFixture<TRootEntity>(
 export type CreateSharedFixtureByKey<TKey, TRootEntity> = (key: TKey) => Promise<TRootEntity>;
 export type GetSharedFixtureByKey<TKey, TRootEntity> = (key: TKey) => Promise<TRootEntity>;
 export function defineGetSharedFixtureByKey<TKey, TRootEntity>(
-  createSharedFixture: CreateSharedFixtureByKey<TKey, TRootEntity>
+  createSharedFixtureByKey: CreateSharedFixtureByKey<TKey, TRootEntity>
 ): GetSharedFixtureByKey<TKey, TRootEntity> {
   const map: Map<TKey, Promise<TRootEntity>> = new Map();
 
@@ -119,7 +119,7 @@ export function defineGetSharedFixtureByKey<TKey, TRootEntity>(
     // Next calls will await for the same share fixture promise;
     // thus, the same fixture is shared between many test cases.
     if (!map.has(key)) {
-      const sharedFixturePromise = createSharedFixture(key)
+      const sharedFixturePromise = createSharedFixtureByKey(key)
         // Share fixture must be immutable. Here we enforce it.
         .then(x => Object.freeze(x));
 
