@@ -1,7 +1,7 @@
 {
   "name": "mocha-concurrent-api-tests",
   "version": "1.0.0",
-  "description": "$todo-description",
+  "description": "Mocha-concurrent-api-tests provides the core functions required to implement concurrent API tests with Mocha. For more details, see https://medium.com/@stphaneleblanc/d84f7a29f0dc?source=friends_link&sk=843339381eaf77195f8522449c907550",
   "main": "src/index.js",
   "directories": {
     "lib": "./src"
@@ -18,11 +18,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "$todo-repository-url"
+    "url": "https://github.com/VilledeMontreal/mocha-concurrent-api-tests"
   },
-  "homepage": "$todo-repository-url",
+  "homepage": "https://github.com/VilledeMontreal/mocha-concurrent-api-tests",
   "keywords": [
-    "$todo-keywords"
+    "mocha",
+    "api",
+    "testing",
+    "end to end",
+    "concurrency",
+    "single threaded"
   ],
   "author": "Stéphane Leblanc",
   "license": "MIT",

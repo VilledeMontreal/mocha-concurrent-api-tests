@@ -1,7 +1,6 @@
 *** lors de la publication
 
 - review doc function signature and format
-- $todo- both repo
 - fix link
 - review immutable data must be meaningless
 - blog post: link sample with blog post

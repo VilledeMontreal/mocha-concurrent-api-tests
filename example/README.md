@@ -1,6 +1,6 @@
 # mocha-concurrent-api-tests example
 
-The mocha-concurrent-api-tests example shows how apply the [Concurrent API Tests](\$todo:blogpost url) approach of with [Mocha](https://mochajs.org/).
+The mocha-concurrent-api-tests example shows how apply the [Concurrent API Tests](https://medium.com/@stphaneleblanc/d84f7a29f0dc?source=friends_link&sk=843339381eaf77195f8522449c907550) approach of with [Mocha](https://mochajs.org/).
 
 The example can be use as a template for starting new test projects.
 
@@ -13,7 +13,7 @@ Under /example, run these npm commands:
 
 ## Features
 
-- Usage examples of [mocha-concurrent-api-tests](../lib/README.md) \$todo
+- Usage examples of [mocha-concurrent-api-tests functions](../lib/README.md#functions)
 - File extension convention
 - Ability to test against the current and the latest stable version version of the system under test.
   - `npm run test-current`

@@ -1,7 +1,6 @@
 {
   "name": "mocha-concurrent-api-test-examples",
   "version": "1.0.0",
-  "description": "$todo-description",
   "scripts": {
     "start": "npm run test-current",
     "test-current": "env NODE_ENV=localhost npm run compileAndTest",
@@ -17,12 +16,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "$todo-repository-url"
+    "url": "https://github.com/VilledeMontreal/mocha-concurrent-api-tests"
   },
-  "homepage": "$todo-repository-url",
-  "keywords": [
-    "$todo-keywords"
-  ],
+  "homepage": "https://github.com/VilledeMontreal/mocha-concurrent-api-tests",
   "author": "Stéphane Leblanc",
   "license": "MIT",
   "dependencies": {

@@ -1,6 +1,6 @@
 # mocha-concurrent-api-tests
 
-Mocha-concurrent-api-tests provides the core functions required to implement [Concurrent API Tests](\$todo:blogpost url) with [Mocha](https://mochajs.org/). Thanks to [mocha.parallel](https://github.com/danielstjules/mocha.parallel) for providing a [single threaded event loop architecture](https://medium.com/@sgd.daran/node-js-single-threaded-event-loop-model-dbeccf6a7c34) for Mocha tests.
+Mocha-concurrent-api-tests provides the core functions required to implement [Concurrent API Tests](https://medium.com/@stphaneleblanc/d84f7a29f0dc?source=friends_link&sk=843339381eaf77195f8522449c907550) with [Mocha](https://mochajs.org/). Thanks to [mocha.parallel](https://github.com/danielstjules/mocha.parallel) for providing a [single threaded event loop architecture](https://medium.com/@sgd.daran/node-js-single-threaded-event-loop-model-dbeccf6a7c34) for Mocha tests.
 
 ## To Install
 
@@ -9,8 +9,6 @@ In your project, run this npm command:
 `npm install mocha-concurrent-api-tests --save-dev`
 
 ## Functions
-
----
 
 ### apiTestSuite(testSuiteName, estimatedTestingTime, environment, maxTestConcurrency, apiTests, skippedTests)
 
@@ -59,7 +57,7 @@ Define a copy template variation to avoid duplication when the same template is 
 
 **Arguments**
 
-- originalCopyTemplate: The original copy template function. See defineCopyTemplate \$todo.
+- originalCopyTemplate: The original copy template function. See [defineCopyTemplate](#definecopytemplatetemplate).
 - variation: A function that specifies only the parts of the payload that are meaningful for the variation.
 
 **Returns**
@@ -94,7 +92,7 @@ See [mocha-concurrent-api-tests example](../example/src/blogPosts/blogPost.apiTe
 
 Some test cases must rely on the timing between API requests. These test cases are likely to be [flaky](https://hackernoon.com/flaky-tests-a-war-that-never-ends-9aa32fdef359) if the timing is not managed with care.
 
-If the precision of the timing has to be less than a seconds, then mocha-concurrent-api-tests is not the right tool for this test case. For more guidance, see [Concurrent API Tests]($todo).
+If the precision of the timing has to be less than a seconds, then mocha-concurrent-api-tests is not the right tool for this test case. For more guidance, see [Concurrent API Tests](https://medium.com/@stphaneleblanc/d84f7a29f0dc?source=friends_link&sk=843339381eaf77195f8522449c907550).
 
 **Arguments**
 
@@ -156,8 +154,6 @@ A function that perform lazy initialization of the shared fixture for a specific
 **Example**
 
 See [mocha-concurrent-api-tests example](../example/src/users/user.fixture.ts#L16).
-
----
 
 ## Testing mocha-concurrent-api-tests itself
 

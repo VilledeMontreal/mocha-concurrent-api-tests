@@ -2,13 +2,13 @@
 
 # mocha-concurrent-api-tests
 
-Mocha-concurrent-api-tests provides the core functions required to implement [Concurrent API Tests](\$todo:blogpost url) with [Mocha](https://mochajs.org/). Thanks to [mocha.parallel](https://github.com/danielstjules/mocha.parallel) for providing a [single threaded event loop architecture](https://medium.com/@sgd.daran/node-js-single-threaded-event-loop-model-dbeccf6a7c34) for Mocha tests. 
+Mocha-concurrent-api-tests provides the core functions required to implement [Concurrent API Tests](https://medium.com/@stphaneleblanc/d84f7a29f0dc?source=friends_link&sk=843339381eaf77195f8522449c907550) with [Mocha](https://mochajs.org/). Thanks to [mocha.parallel](https://github.com/danielstjules/mocha.parallel) for providing a [single threaded event loop architecture](https://medium.com/@sgd.daran/node-js-single-threaded-event-loop-model-dbeccf6a7c34) for Mocha tests. 
 
 For more details, see the [mocha-concurrent-api-tests documentation](/lib/README.md).
 
 ## Example
 
-The mocha-concurrent-api-tests example shows how apply the [Concurrent API Tests](\$todo:blogpost url) approach of with [Mocha](https://mochajs.org/).
+The mocha-concurrent-api-tests example shows how apply the [Concurrent API Tests](https://medium.com/@stphaneleblanc/d84f7a29f0dc?source=friends_link&sk=843339381eaf77195f8522449c907550) approach of with [Mocha](https://mochajs.org/).
 
 The example can be use as a template for starting new test projects.
 
