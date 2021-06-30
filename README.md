@@ -1,67 +1,27 @@
-([Français](#french-version))
+([French version](README-fr.md))
 
-<a id='english-version' class='anchor' aria-hidden='true'/>
+# mocha-concurrent-api-tests
 
-# Template for open source code repositories of the Ville de Montréal
+Mocha-concurrent-api-tests provides the core functions required to implement [Concurrent API Tests](\$todo:blogpost url) with [Mocha](https://mochajs.org/). Thanks to [mocha.parallel](https://github.com/danielstjules/mocha.parallel) for providing a [single threaded event loop architecture](https://medium.com/@sgd.daran/node-js-single-threaded-event-loop-model-dbeccf6a7c34) for Mocha tests. 
 
-## Template for README.md
+For more details, see the [mocha-concurrent-api-tests documentation](/lib/README.md).
 
-- Project description
+## Example
 
-### Details
+The mocha-concurrent-api-tests example shows how apply the [Concurrent API Tests](\$todo:blogpost url) approach of with [Mocha](https://mochajs.org/).
 
-- How does it work?
-- Who will use this project?
+The example can be use as a template for starting new test projects.
 
-### Build
+For more details, see the [example documentation](/example/README.md).
 
-### Installation
-
-### Testing
-
-### License
+## License
 
 The source code of this project is distributed under the [MIT License](LICENSE).
 
-### Contributing
+## Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md#english-version).
+See [CONTRIBUTING.md](CONTRIBUTING.md).
 
-### Code of Conduct
+## Code of Conduct
 
 Participation in this poject is governed by the [Code of Conduct](CODE_OF_CONDUCT.md).
-
-______________________
-
-([English](#english-version))
-
-<a id='french-version' class='anchor' aria-hidden='true'/>
-
-# Gabarit pour dépôts de code source libre de la Ville de Montréal
-
-## Gabarit pour README.md
-
-Description du projet
-
-### Détails
-
-- Comment fonctionne le produit?
-- À qui s'adresse le produit?
-
-### Bâtir
-
-### Installer
-
-### Tester
-
-### Contribuer
-
-Voir [CONTRIBUTING.md](CONTRIBUTING.md#french-version)
-
-### Licence et propriété intellectuelle
-
-Le code source de ce projet est libéré sous la licence [MIT License](LICENSE).
-
-### Code de Conduite
-
-La participation à ce projet est réglementée part le [Code de Conduite](CODE_OF_CONDUCT.md#french-version)

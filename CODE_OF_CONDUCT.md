@@ -1,8 +1,8 @@
-([Français](#Code-de-conduite-pour-le-projet-nom-du-projet))
+([Français](#code-de-conduite))
 
-# Contributor Covenant Code of Conduct for the [`project_name`] project
+# Contributor Covenant Code of Conduct
 
-Contributors to repositories hosted in [`project_name`] are expected to follow the Contributor Covenant Code of Conduct, and those working within City of Montreal are also expected to follow the Code of Conduct for the City of Montreal Employees 
+Contributors to repositories hosted in mocha-concurrent-api-tests are expected to follow the Contributor Covenant Code of Conduct, and those working within City of Montreal are also expected to follow the Code of Conduct for the City of Montreal Employees 
 
 ## Code of Conduct for the City Employees
 
@@ -38,13 +38,13 @@ Project maintainers have the right and responsibility to remove, edit, or reject
 
 ## Scope
 
-This Code of Conduct applies both within project spaces and in public spaces when an individual is representing the project, members or [`department`].
-Examples of representing a project, members or [`department`] include using an official project e-mail address, posting via an official social media account, or acting as an appointed representative at an online or offline event.
+This Code of Conduct applies both within project spaces and in public spaces when an individual is representing the project, members or department.
+Examples of representing a project, members or department include using an official project e-mail address, posting via an official social media account, or acting as an appointed representative at an online or offline event.
 Representation of a project may be further defined and clarified by project maintainers.
 
 ## Enforcement
 
-Instances of abusive, harassing, or otherwise unacceptable behavior may be reported by contacting the project team at [`project email`].
+Instances of abusive, harassing, or otherwise unacceptable behavior may be reported by contacting the project team at mocha.concurrent.api.tests@montreal.ca.
 All complaints will be reviewed and investigated and will result in a response that is deemed necessary and appropriate to the circumstances.
 The project team is obligated to maintain confidentiality with regard to the reporter of an incident.
 Further details of specific enforcement policies may be posted separately.
@@ -66,11 +66,11 @@ available at [https://www.contributor-covenant.org/version/1/4/code-of-conduct.h
 &nbsp;  
 
 
-([English](#Contributor-Covenant-Code-of-Conduct-for-the-project_name-project))
+([English](#contributor-covenant-code-of-conduct))
 
-# Code de conduite pour le projet [`nom du projet`]
+# Code de conduite
 
-Les contributeurs aux dépôts hébergés dans [`nom du projet`] sont tenus de respecter le Code de conduite du Pacte des contributeurs, et ceux qui travaillent au sein de la Ville de Montréal sont également tenus de respecter le Code de conduite des employés de la Ville de Montréal.
+Les contributeurs aux dépôts hébergés dans mocha-concurrent-api-tests sont tenus de respecter le Code de conduite du Pacte des contributeurs, et ceux qui travaillent au sein de la Ville de Montréal sont également tenus de respecter le Code de conduite des employés de la Ville de Montréal.
 
 ## Code de conduite des employés de la Ville de Montréal
 
@@ -113,7 +113,7 @@ La représentation d'un projet peut être mieux défini et clarifié par les res
 
 ## Application des règles
 
-Les cas de comportement abusif, de harcèlement ou d'autres comportements inacceptables peuvent être rapportés en communiquant avec l'équipe de projet à l'adresse suivante :[`courriel`].
+Les cas de comportement abusif, de harcèlement ou d'autres comportements inacceptables peuvent être rapportés en communiquant avec l'équipe de projet à l'adresse suivante :mocha.concurrent.api.tests@montreal.ca.
 Toutes les plaintes feront l'objet d'un examen et d'une enquête et donneront lieu à une réponse qui est jugée nécessaire et appropriée dans les circonstances.
 L'équipe de projet est dans l'obligation de respecter la confidentialité à l'égard du déclarant d'un incident.
 De plus amples détails sur les politiques d'application spécifiques peuvent être affichés séparément.

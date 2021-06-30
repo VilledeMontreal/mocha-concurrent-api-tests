@@ -1,0 +1,27 @@
+*** lors de la publication
+- publish github
+- $todo- both repo
+- fix link
+- review immutable data must be meaningless
+- blog post: link sample with blog post
+- link github with blog post
+- publish npm: use the city namespace in npm 
+- use package from npm in example
+***
+
+*** promote
+https://stackoverflow.com/questions/28641646/kicking-off-mocha-describes-in-parallel
+https://alisterbscott.com/2018/07/05/running-mocha-e2e-tests-in-parallel/
+https://blog.comtradedigital.com/blog/parallel-test-execution
+https://github.com/danielstjules/mocha.parallel
+https://nodeweekly.com/issues/391
+mon réseau
+confoo 
+***
+
+*** later
+- unique constraint: example
+- flaky tests checker as npm command
+- fix linter: why I interface prefix does not work
+- blog post: mettre de l'avant la ville
+***
