@@ -1,6 +1,6 @@
 {
   "name": "@villedemontreal/mocha-concurrent-api-tests",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Provides the core functions required to implement concurrent API tests with Mocha.",
   "main": "src/index.js",
   "directories": {
@@ -24,10 +24,11 @@
   "keywords": [
     "mocha",
     "api",
-    "testing",
-    "end to end",
+    "test",
+    "spec",
     "concurrency",
-    "single threaded"
+    "parallel",
+    "async"
   ],
   "author": "Stéphane Leblanc",
   "license": "MIT",
