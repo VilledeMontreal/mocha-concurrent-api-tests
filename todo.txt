@@ -1,12 +1,3 @@
-*** lors de la publication
-- use package from npm in example
-- create develop
-- review immutable data must be meaningless
-- blog post: link sample with blog post
-- link github with blog post
-- review npm keywords
-***
-
 *** promote
 https://stackoverflow.com/questions/28641646/kicking-off-mocha-describes-in-parallel
 https://alisterbscott.com/2018/07/05/running-mocha-e2e-tests-in-parallel/
