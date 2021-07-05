@@ -4,7 +4,7 @@ The mocha-concurrent-api-tests example shows how apply the [Concurrent API Tests
 
 Concurrent API tests are as easy to read as standard Mocha tests. Here are some test case for the [blog posts](https://github.com/VilledeMontreal/mocha-concurrent-api-tests/blob/master/example/src/blogPosts/blogPost.apiTest.ts) and [users](https://github.com/VilledeMontreal/mocha-concurrent-api-tests/blob/master/example/src/users/user.apiTest.ts). 
 
-These test cases are grouped in a test suite. Running the test suite produce this test report.
+These test cases are grouped in a test suite. Running the test suite produces this test report.
 ```
 ----------------------------------------------------------
 Test suite name: 
