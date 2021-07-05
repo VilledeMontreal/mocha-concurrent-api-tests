@@ -2,7 +2,36 @@
 
 The mocha-concurrent-api-tests example shows how apply the [Concurrent API Tests](https://medium.com/@stphaneleblanc/d84f7a29f0dc?source=friends_link&sk=843339381eaf77195f8522449c907550) approach of with [Mocha](https://mochajs.org/).
 
-The example can be use as a template for starting new test projects.
+Concurrent API tests are as easy to read as standard Mocha tests. Here are some test case for the [blog posts](https://github.com/VilledeMontreal/mocha-concurrent-api-tests/blob/master/example/src/blogPosts/blogPost.apiTest.ts) and [users](https://github.com/VilledeMontreal/mocha-concurrent-api-tests/blob/master/example/src/users/user.apiTest.ts). 
+
+These test cases are grouped in a test suite. Running the test suite produce this test report.
+```
+----------------------------------------------------------
+Test suite name: 
+sample test suite
+----------------------------------------------------------
+Estimated execution time: 
+3 seconds
+----------------------------------------------------------
+Environment: 
+http://localhost:$port
+----------------------------------------------------------
+Test run id: 
+zApiTest-e0eb7662-6163-4d46-b716-ee2a97a508ff
+----------------------------------------------------------
+    ✓ users - create (1002ms)
+    ✓ blogPosts - create (2004ms)
+    ✓ blogPosts - title is required (2003ms)
+    ✓ blogPosts - search by author (3004ms)
+    ✓ Anti-pattern: Asserting on default values (3004ms)
+
+
+  5 passing (3s)
+```
+
+
+
+The folder ./example can be use as a template for starting new test projects.
 
 ## To execute
 
