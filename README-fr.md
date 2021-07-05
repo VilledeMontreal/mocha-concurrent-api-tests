@@ -12,7 +12,7 @@ L'exemple mocha-concurrent-api-tests montre comment appliquer l'approche [Concur
 
 L'exemple peut être utilisé comme modèle pour démarrer de nouveaux projets de test.
 
-Pour plus de détails, consultez la [documentation de l'exemple](/exemple/README.md#mocha-concurrent-api-tests-example).
+Pour plus de détails, consultez la [documentation de l'exemple](/example/README.md#mocha-concurrent-api-tests-example).
 
 ## Licence et propriété intellectuelle
 
