@@ -14,7 +14,7 @@ Estimated execution time:
 3 seconds
 ----------------------------------------------------------
 Environment: 
-http://localhost:$port
+http://localhost:12345
 ----------------------------------------------------------
 Test run id: 
 zApiTest-e0eb7662-6163-4d46-b716-ee2a97a508ff
