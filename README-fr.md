@@ -6,9 +6,9 @@ Mocha-concurrent-api-tests fournit les fonctions de base requises pour implémen
 
 Pour plus de détails, consultez la [documentation mocha-concurrent-api-tests](/lib/README.md#mocha-concurrent-api-tests).
 
-## Example
+## Exemple
 
-L'exemple mocha-concurrent-api-tests montre comment appliquer l'approche [Concurrent API Tests](https://medium.com/@stphaneleblanc/d84f7a29f0dc?source=friends_link&sk=843339381eaf77195f8522449c907550) avec [Mocha](https://mochajs.org/).
+L'exemple mocha-concurrent-api-tests démontre comment appliquer l'approche [Concurrent API Tests](https://medium.com/@stphaneleblanc/d84f7a29f0dc?source=friends_link&sk=843339381eaf77195f8522449c907550) avec [Mocha](https://mochajs.org/).
 
 L'exemple peut être utilisé comme modèle pour démarrer de nouveaux projets de test.
 
