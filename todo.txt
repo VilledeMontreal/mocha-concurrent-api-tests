@@ -1,13 +1,8 @@
 *** promote
-https://stackoverflow.com/questions/28641646/kicking-off-mocha-describes-in-parallel
-https://alisterbscott.com/2018/07/05/running-mocha-e2e-tests-in-parallel/
-https://blog.comtradedigital.com/blog/parallel-test-execution
-https://github.com/danielstjules/mocha.parallel
-
-https://nodeweekly.com/issues/391
-mon réseau
 confoo 
 ***
+
+
 
 *** later
 - unique constraint: example
