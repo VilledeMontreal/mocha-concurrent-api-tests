@@ -28,7 +28,7 @@
     "@villedemontreal/mocha-concurrent-api-tests": "1.0.3",
     "chai": "4.3.4",
     "config": "3.3.6",
-    "mocha": "8.3.2",
+    "mocha": "10.1.0",
     "mocha-error-reporters": "1.0.0",
     "mocha.parallel": "0.15.6",
     "source-map-support": "0.5.19",
