@@ -2,11 +2,7 @@
 confoo 
 ***
 
-
-
 *** later
 - unique constraint: example
-- flaky tests checker as npm command
 - fix linter: why I interface prefix does not work
-- blog post: mettre de l'avant la ville
 ***

@@ -45,7 +45,7 @@
     "@types/lodash": "4.14.170",
     "chai": "4.3.4",
     "lodash": "4.17.21",
-    "mocha.parallel": "0.15.6",
+    "mocha.parallel": "github:steph-lebl/mocha.parallel#feature/enable-retries",
     "uuid": "8.3.2"
   },
   "bugs": {

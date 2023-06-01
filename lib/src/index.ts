@@ -11,13 +11,18 @@ export function apiTestSuite(
   estimatedTestingTime: string,
   environment: string,
   maxTestConcurrency: number,
+  maxRetries: number,
+  retryTimeoutInMiliseconds: number,
   apiTests: () => void,
   _skippedTests?: () => void
 ): void {
   parallel.limit(maxTestConcurrency);
+  parallel.maxRetries(maxRetries);
+  parallel.retryTimeoutInMiliseconds(retryTimeoutInMiliseconds);
   const testRunLabel = getTestRunLabel(testSuiteName, estimatedTestingTime, environment);
 
-  parallel(testRunLabel, apiTests);
+  console.log(testRunLabel);
+  parallel(testSuiteName, apiTests);
 }
 
 export function getTestRunId() {
@@ -129,3 +134,36 @@ export function defineGetSharedFixtureByKey<TKey, TRootEntity>(
     return map.get(key);
   };
 }
+
+export function getFlakyTestReport(){
+  if(parallel.getRetriedTestFailures().length>0){
+    return "\n\nFlaky Tests:\n" +
+      parallel
+        .getRetriedTestFailures()
+        .sort(orderBySpecNameThenTestExecutionIndex)
+        .map((failedTest:any) =>
+          `- failed ${failedTest.testExecutionIndex + 1} times: ${failedTest.specName}\n${failedTest.err}`
+        )
+        .join("\n");
+  }
+  else{
+    return "";
+  }
+}
+
+function orderBySpecNameThenTestExecutionIndex(a:any, b:any) {
+  return a.specName == b.specName
+    ? compare(a.testExecutionIndex, b.testExecutionIndex)
+    : compare(a.specName, b.specName);
+}
+
+function compare(a:any, b:any) {
+  if (a < b) {
+    return -1;
+  }
+  if (a > b) {
+    return 1;
+  }
+  return 0;
+}
+
