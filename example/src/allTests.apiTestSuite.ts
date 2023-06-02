@@ -1,7 +1,7 @@
 import { blogPostApiTests } from './blogPosts/blogPost.apiTest';
 import { apiUnderTestConfig } from './shared/apiUnderTest/apiUnderTestConfig';
 import { userApiTests } from './users/user.apiTest';
-import { apiTestSuite, getFlakyTestReport } from '@villedemontreal/mocha-concurrent-api-tests';
+import { apiTestSuite} from '@villedemontreal/mocha-concurrent-api-tests';
 
 apiTestSuite(
   'sample test suite',
@@ -13,11 +13,6 @@ apiTestSuite(
   () => {
     userApiTests();
     blogPostApiTests();
-
-    // after hook is a simplistic approach to building a reporter for flaky tests.
-    // Consider using .getRetriedTestFailures() to build a proper mocha reporter
-    // For more details, see https://mochajs.org/api/tutorial-custom-reporter.html
-    after(()=> console.log(getFlakyTestReport()));  
   },
   () => {
     // mocha.parallel does not support nested test suites.

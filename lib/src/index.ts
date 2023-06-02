@@ -1,9 +1,11 @@
 import { v4 as uuidv4 } from 'uuid';
 import assert = require('assert');
 import lodash = require('lodash');
+import { getFlakyTestReport, getTestRunLabel } from './report';
 
 const parallel = require('mocha.parallel');
 
+// By design, there can be only one apiTestSuite; thus, global properties are acceptable in this context.
 let testRunId: string = null;
 
 export function apiTestSuite(
@@ -19,10 +21,17 @@ export function apiTestSuite(
   parallel.limit(maxTestConcurrency);
   parallel.maxRetries(maxRetries);
   parallel.retryTimeoutInMiliseconds(retryTimeoutInMiliseconds);
-  const testRunLabel = getTestRunLabel(testSuiteName, estimatedTestingTime, environment);
+  const testRunLabel = getTestRunLabel(testSuiteName, estimatedTestingTime, environment, maxTestConcurrency, maxRetries, retryTimeoutInMiliseconds,getTestRunId());
 
   console.log(testRunLabel);
-  parallel(testSuiteName, apiTests);
+  parallel(testSuiteName, logFlakyTestsAfter(maxRetries, apiTests));
+}
+
+function logFlakyTestsAfter(maxRetries:number, apiTests:() => void){
+  return ()=>{
+    apiTests();
+    after(() => { console.log(getFlakyTestReport(maxRetries))})
+  }
 }
 
 export function getTestRunId() {
@@ -35,23 +44,6 @@ export function getTestRunId() {
     testRunId = `zApiTest-${uuidv4()}`;
   }
   return testRunId;
-}
-
-function getTestRunLabel(testSuiteName: string, estimatedTestingTime: string, environment: string) {
-  return `
-----------------------------------------------------------
-Test suite name: 
-${testSuiteName}
-----------------------------------------------------------
-Estimated execution time: 
-${estimatedTestingTime}
-----------------------------------------------------------
-Environment: 
-${environment}
-----------------------------------------------------------
-Test run id: 
-${getTestRunId()}
-----------------------------------------------------------`;
 }
 
 export function aFewSeconds(delayInSeconds: number): Promise<void> {
@@ -134,36 +126,3 @@ export function defineGetSharedFixtureByKey<TKey, TRootEntity>(
     return map.get(key);
   };
 }
-
-export function getFlakyTestReport(){
-  if(parallel.getRetriedTestFailures().length>0){
-    return "\n\nFlaky Tests:\n" +
-      parallel
-        .getRetriedTestFailures()
-        .sort(orderBySpecNameThenTestExecutionIndex)
-        .map((failedTest:any) =>
-          `- failed ${failedTest.testExecutionIndex + 1} times: ${failedTest.specName}\n${failedTest.err}`
-        )
-        .join("\n");
-  }
-  else{
-    return "";
-  }
-}
-
-function orderBySpecNameThenTestExecutionIndex(a:any, b:any) {
-  return a.specName == b.specName
-    ? compare(a.testExecutionIndex, b.testExecutionIndex)
-    : compare(a.specName, b.specName);
-}
-
-function compare(a:any, b:any) {
-  if (a < b) {
-    return -1;
-  }
-  if (a > b) {
-    return 1;
-  }
-  return 0;
-}
-
