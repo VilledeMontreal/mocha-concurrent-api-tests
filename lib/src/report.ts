@@ -48,7 +48,7 @@ export function getFlakyTestReport(maxRetries:number){
     flakySpecNames.sort();
   
     if(flakySpecNames.length>0){
-      return "Flaky Tests:\n" +
+      return "\nFlaky Tests:\n" +
         flakySpecNames
           .map((flakySpecName) =>
             `- ${flakySpecName} fails ${retriedTestFailuresGroupBySpecName[flakySpecName].length} times before succeding.\n${getRetriedTestFailuresReport(retriedTestFailuresGroupBySpecName[flakySpecName])}`
