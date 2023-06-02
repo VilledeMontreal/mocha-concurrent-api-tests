@@ -27,7 +27,7 @@ apiTestSuite(
         }
     });
     let iFlakyTwice =0;
-    it('Flaky Twice', () => {
+    it('Flaky twice', () => {
         iFlakyTwice++;
         if(iFlakyTwice<=2){
             const error = new Error('Pow!Flaky:'+iFlakyTwice ) as any;
