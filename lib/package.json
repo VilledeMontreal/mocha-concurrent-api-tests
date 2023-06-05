@@ -33,17 +33,17 @@
   "author": "Stéphane Leblanc",
   "license": "MIT",
   "devDependencies": {
+    "@types/chai": "4.2.19",
+    "@types/lodash": "4.14.170",
     "@types/mocha": "8.2.0",
     "@villedemontreal/lint-config": "1.7.5",
+    "chai": "4.3.4",
     "mocha": "8.3.2",
     "mocha-error-reporters": "1.0.0",
     "source-map-support": "0.5.19",
     "typescript": "4.1.3"
   },
   "dependencies": {
-    "@types/chai": "4.2.19",
-    "@types/lodash": "4.14.170",
-    "chai": "4.3.4",
     "lodash": "4.17.21",
     "mocha.parallel": "github:steph-lebl/mocha.parallel#feature/enable-retries",
     "serialize-error": "8.1.0",

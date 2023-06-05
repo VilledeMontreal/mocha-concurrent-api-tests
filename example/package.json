@@ -22,10 +22,11 @@
   "homepage": "https://github.com/VilledeMontreal/mocha-concurrent-api-tests",
   "author": "Stéphane Leblanc",
   "license": "MIT",
-  "dependencies": {
+  "devDependencies": {
     "@types/chai": "4.2.14",
     "@types/config": "0.0.38",
     "@types/mocha": "8.2.0",
+    "@villedemontreal/lint-config": "1.7.5",
     "@villedemontreal/mocha-concurrent-api-tests": "1.0.3",
     "chai": "4.3.4",
     "config": "3.3.6",
@@ -34,8 +35,5 @@
     "mocha.parallel": "github:steph-lebl/mocha.parallel#feature/enable-retries",
     "source-map-support": "0.5.19",
     "typescript": "4.1.3"
-  },
-  "devDependencies": {
-    "@villedemontreal/lint-config": "1.7.5"
   }
 }
