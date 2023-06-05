@@ -2,6 +2,7 @@ node_modules
 
 *.map
 *.js
+*.d.ts
 !/prettier.config.js
 
 
