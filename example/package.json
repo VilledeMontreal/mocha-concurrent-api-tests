@@ -27,7 +27,7 @@
     "@types/config": "0.0.38",
     "@types/mocha": "8.2.0",
     "@villedemontreal/lint-config": "1.7.5",
-    "@villedemontreal/mocha-concurrent-api-tests": "1.0.6",
+    "@villedemontreal/mocha-concurrent-api-tests": "1.0.7",
     "chai": "4.3.4",
     "config": "3.3.6",
     "mocha": "8.3.2",
