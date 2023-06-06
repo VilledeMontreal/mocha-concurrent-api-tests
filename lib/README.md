@@ -10,7 +10,7 @@ In your project, run this npm command:
 
 ## Functions
 
-### apiTestSuite(testSuiteName, estimatedTestingTime, environment, maxTestConcurrency, apiTests, skippedTests)
+### apiTestSuite(testSuiteName, estimatedTestingTime, environment, maxTestConcurrency, maxRetries, retryTimeoutInMiliseconds, apiTests, skippedTests)
 
 Execute a mocha concurrent api test suite. Mocha [describe function](https://mochajs.org/#getting-started) and nested describe functions are not supported by mocha-concurrent-api-tests. Instead, a mocha concurrent api test suite executes many Mocha [it function](https://mochajs.org/#getting-started) concurrently in the same thread.
 
